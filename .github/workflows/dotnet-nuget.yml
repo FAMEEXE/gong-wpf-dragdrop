@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - develoü
+      - develop
       
 jobs:
   build:
