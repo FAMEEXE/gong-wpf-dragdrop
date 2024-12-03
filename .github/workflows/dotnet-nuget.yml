@@ -8,7 +8,7 @@ on:
       
 jobs:
   build:
-    runs-on: ubuntu-latest    
+    runs-on: windows-latest    
     outputs: 
       Version: ${{ steps.gitversion.outputs.SemVer }}
       CommitsSinceVersionSource: ${{ steps.gitversion.outputs.CommitsSinceVersionSource }} 
@@ -45,7 +45,7 @@ jobs:
         path: bin/Release/ 
         
   release:
-    runs-on: ubuntu-latest    
+    runs-on: windows-latest    
     needs: build    
     steps:  
     #Push NuGet package to GitHub packages
